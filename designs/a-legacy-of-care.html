@@ -1,0 +1,302 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sandiway Manor: direction A, A Legacy of Care (concept)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --parch:#F6F0E4;--stone:#EAE0CD;--sand:#A4482F;--sand-dk:#86361F;--ink:#2A211C;--mute:#57493F;
+  --sandiway:#7E1F63;--upton:#4A6820;--trep:#365A86;--line:#D6C8AE;
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--parch);color:var(--ink);font:400 1.1875rem/1.6 "Atkinson Hyperlegible",system-ui,sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1240px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:Newsreader,Georgia,serif;font-weight:500;letter-spacing:-.01em;margin:0}
+.serif{font-family:Newsreader,Georgia,serif}
+
+/* top bar */
+.topbar{background:var(--sandiway);color:#fff}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:12px 24px;flex-wrap:wrap;padding-top:10px;padding-bottom:10px}
+.topbar p{margin:0;font-size:1rem}
+.topbar a.tel{font-weight:700;font-size:1.25rem;text-decoration:none;white-space:nowrap}
+.topbar a.tel span{font-weight:400;font-size:1rem;margin-right:6px}
+
+/* header */
+header.site{border-bottom:1px solid var(--line)}
+header.site .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:20px;padding-bottom:20px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand svg{flex:none}
+.brand b{display:block;font:500 2rem/1 Newsreader,serif;color:var(--sandiway)}
+.brand small{display:block;font-size:.95rem;color:var(--mute);margin-top:4px}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:6px 26px}
+nav a{text-decoration:none;font-weight:700;font-size:1.05rem;padding:8px 0;display:inline-block;border-bottom:2px solid transparent}
+nav a:hover{border-color:var(--sand)}
+
+/* hero */
+.hero{padding:56px 0 64px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:56px;align-items:center}
+.eyebrow{font-size:1rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--sand-dk);margin:0 0 16px}
+.hero h1{font-size:clamp(2.4rem,4.6vw,4rem);line-height:1.05;margin-bottom:22px}
+.hero h1 em{color:var(--sand-dk)}
+.hero p.lede{font-size:1.3rem;max-width:34ch;margin:0 0 30px;color:var(--mute)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:56px;padding:12px 24px;border-radius:999px;font-weight:700;font-size:1.1rem;text-decoration:none;border:2px solid var(--ink)}
+.btn.solid{background:var(--ink);color:var(--parch)}
+.arch{border-radius:999px 999px 0 0;overflow:hidden;position:relative;background:var(--stone)}
+.arch.hero-img{aspect-ratio:4/5;border:10px solid #fff;box-shadow:0 30px 60px -40px rgba(42,33,28,.6)}
+.crop-l img,.crop-r img{position:absolute;top:0;height:100%;width:auto;max-width:none}
+.crop-l img{left:0}.crop-r img{right:0}
+.cover img{width:100%;height:100%;object-fit:cover}
+.hero-fig{position:relative}
+.hero-fig figcaption{position:absolute;left:-18px;bottom:28px;background:var(--parch);padding:10px 16px;font-size:1rem;border-left:4px solid var(--sand);max-width:250px;box-shadow:0 10px 30px -20px rgba(0,0,0,.4)}
+
+/* facts */
+.facts{background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.facts ul{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.facts li{padding:26px 24px;border-left:1px solid var(--line)}
+.facts li:first-child{border-left:0}
+.facts b{display:block;font:500 2.2rem/1 Newsreader,serif;color:var(--sandiway);margin-bottom:6px}
+
+section{padding:80px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+.sec-head h2{font-size:clamp(2rem,3.4vw,2.9rem);line-height:1.1;max-width:20ch}
+.sec-head p{margin:0;max-width:44ch;color:var(--mute)}
+
+/* life */
+.life{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.life figure{margin:0}
+.life .arch{aspect-ratio:3/4}
+.life figcaption{padding-top:16px}
+.life figcaption b{display:block;font:500 1.45rem/1.2 Newsreader,serif;margin-bottom:4px}
+
+/* words */
+.words{background:var(--stone)}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+blockquote{margin:0;background:var(--parch);padding:30px 28px;border-top:4px solid var(--sandiway)}
+blockquote p{font:italic 400 1.3rem/1.45 Newsreader,serif;margin:0 0 18px}
+blockquote cite{font-style:normal;font-weight:700}
+blockquote cite span{display:block;font-weight:400;color:var(--mute)}
+
+/* legacy */
+.legacy{background:var(--sand-dk);color:#FBF3E8}
+.legacy .wrap{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:56px;align-items:center}
+.legacy h2{font-size:clamp(2.1rem,3.8vw,3.2rem);line-height:1.08;margin:0 0 22px}
+.legacy p{max-width:50ch;margin:0 0 16px}
+.legacy .sum{font:500 1.5rem/1.3 Newsreader,serif;border-left:3px solid #F1C9A6;padding-left:18px;margin:26px 0}
+.legacy .old{background:#FBF3E8;padding:14px 14px 10px;transform:rotate(-1.2deg);box-shadow:0 30px 50px -30px rgba(0,0,0,.6)}
+.legacy .old p{color:var(--ink);font-size:1rem;margin:10px 4px 0}
+.legacy .btn{border-color:#FBF3E8;color:#FBF3E8}
+.legacy .btn.solid{background:#FBF3E8;color:var(--sand-dk)}
+
+/* family */
+.family .homes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.home{background:#fff;border:1px solid var(--line);padding:30px 28px 28px;position:relative;display:flex;flex-direction:column}
+.home .here{position:absolute;top:18px;right:18px;font-size:.95rem;font-weight:700;background:var(--parch);padding:4px 10px;border-radius:99px}
+.home h3{font-size:1.9rem;margin:16px 0 2px}
+.home .town{color:var(--mute);margin:0 0 14px}
+.home ul{margin:0 0 20px;padding-left:20px}
+.home .tel{margin-top:auto;font-weight:700;font-size:1.3rem;text-decoration:none;display:block;padding-top:16px;border-top:1px solid var(--line)}
+.home .tel span{display:block;font-weight:400;font-size:.95rem;color:var(--mute)}
+.home.s{border-top:6px solid var(--sandiway)}.home.s h3,.home.s .tel{color:var(--sandiway)}
+.home.u{border-top:6px solid var(--upton)}.home.u h3,.home.u .tel{color:var(--upton)}
+.home.t{border-top:6px solid var(--trep)}.home.t h3,.home.t .tel{color:var(--trep)}
+.trustline{display:flex;align-items:center;gap:18px;margin-top:34px;padding:22px 26px;border:1px solid var(--line);flex-wrap:wrap}
+.trustline p{margin:0;flex:1 1 300px}
+
+/* visit */
+.visit .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:56px;align-items:start}
+.visit h2{font-size:clamp(2rem,3.4vw,2.9rem);margin-bottom:18px}
+.card{background:#fff;border:1px solid var(--line);padding:30px}
+.card dl{margin:0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:12px 20px}
+.card dt{font-weight:700}.card dd{margin:0}
+.card .big{font:600 2.2rem/1.1 Newsreader,serif;color:var(--sandiway);text-decoration:none}
+
+footer{background:var(--ink);color:#EDE4D3;padding:48px 0 40px;font-size:1rem}
+footer .wrap{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);gap:32px}
+footer h4{font:500 1.3rem Newsreader,serif;margin:0 0 10px;color:#fff}
+footer p{margin:0 0 8px}
+footer ul{list-style:none;margin:0;padding:0;line-height:2}
+.note{grid-column:1/-1;border-top:1px solid #4a3e36;padding-top:18px;color:#BFB3A0;font-size:.9rem}
+
+@media (max-width:980px){
+  .hero .wrap,.legacy .wrap,.visit .wrap{grid-template-columns:1fr;gap:36px}
+  .facts ul{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .facts li:nth-child(3){border-left:0}
+  .facts li{border-top:1px solid var(--line)}
+  .quotes,.life,.family .homes{grid-template-columns:1fr}
+  .life .arch{aspect-ratio:4/3}
+  footer .wrap{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .wrap{padding:0 18px}
+  body{font-size:1.125rem}
+  .topbar p{display:none}
+  .topbar .wrap{justify-content:center}
+  header.site .wrap{padding-top:16px;padding-bottom:12px}
+  .brand b{font-size:1.7rem}
+  nav ul{gap:2px 18px}
+  .hero{padding:34px 0 48px}
+  .hero-fig figcaption{left:10px;right:10px;bottom:12px;max-width:none}
+  .arch.hero-img{aspect-ratio:1/1;border-width:6px}
+  section{padding:56px 0}
+  .facts li{padding:18px 16px}
+  .facts b{font-size:1.8rem}
+  .btn{width:100%;justify-content:center}
+}
+</style>
+</head>
+<body>
+<div style="background:#17201B;color:#fff;font:500 14px/1.4 system-ui,sans-serif;padding:9px 20px;position:relative;display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;z-index:2147483000"><span style="display:inline-flex;align-items:center;gap:8px"><svg style="height:12px;width:auto;color:#fff" viewBox="0 0 487.5 208.5" role="img" aria-label="Pete Owen Design logo"><path fill="currentColor" d="M487.5,10.6h-41.2v15.5c-15.3-10.6-33.9-16.8-53.8-16.8-30.1,0-57,14.1-74.4,36-17.4-21.9-44.3-36-74.4-36s-57,14.1-74.4,36c-17.4-21.9-44.3-36-74.4-36C44.8,9.4,3.8,48,0,96.9h-.3v100.3h41.2v-14.5c15.3,10.6,33.9,16.8,53.8,16.8,30.1,0,57-14.1,74.4-36,17.4,21.9,44.3,36,74.4,36s57-14.1,74.4-36c17.4,21.9,44.3,36,74.4,36,52.4,0,95.1-42.6,95.1-95.1s0-1.3,0-1.9h0V10.6h0ZM94.6,158.2c-29.7,0-53.8-24.2-53.8-53.8s24.2-53.8,53.8-53.8,53.8,24.2,53.8,53.8-24.2,53.8-53.8,53.8ZM243.5,158.2c-29.7,0-53.8-24.2-53.8-53.8s24.2-53.8,53.8-53.8,53.8,24.2,53.8,53.8-24.2,53.8-53.8,53.8ZM392.4,158.2c-29.7,0-53.8-24.2-53.8-53.8s24.2-53.8,53.8-53.8,53.8,24.2,53.8,53.8-24.2,53.8-53.8,53.8Z"/></svg> Design idea by Pete Owen Design. Not the live CRH Trust website.</span><a href="../index.html" style="color:#fff;font-weight:700">Back to the start</a></div>
+
+<div class="topbar"><div class="wrap">
+  <p>A home of the Cheshire Residential Homes Trust, a charity founded in 1947</p>
+  <a class="tel" href="tel:01606883008"><span>Call us</span>01606 883008</a>
+</div></div>
+
+<header class="site"><div class="wrap">
+  <a class="brand" href="#" aria-label="Sandiway Manor home">
+    <svg width="58" height="72" viewBox="0 0 58 72" aria-hidden="true"><path d="M4 70V29a25 25 0 0 1 50 0v41" fill="none" stroke="#7E1F63" stroke-width="4"/><path d="M14 70V33a15 15 0 0 1 30 0v37" fill="#7E1F63" opacity=".12"/><path d="M29 18v52M14 44h30" stroke="#7E1F63" stroke-width="2.5"/><path d="M14 70V33a15 15 0 0 1 30 0v37" fill="none" stroke="#7E1F63" stroke-width="2.5"/></svg>
+    <span><b>Sandiway Manor</b><small>Residential care near Northwich, Cheshire</small></span>
+  </a>
+  <nav aria-label="Main"><ul>
+    <li><a href="#life">Life here</a></li>
+    <li><a href="#care">Care and short stays</a></li>
+    <li><a href="#legacy">Our story</a></li>
+    <li><a href="#homes">Our three homes</a></li>
+    <li><a href="#visit">Visit us</a></li>
+  </ul></nav>
+</div></header>
+
+<main>
+<section class="hero" style="padding-top:56px"><div class="wrap">
+  <div>
+    <p class="eyebrow">Sandiway, three miles from Northwich</p>
+    <h1>A sandstone manor in mature gardens, <em>and a little help with daily life.</em></h1>
+    <p class="lede">Walk in and feel the warm, friendly welcome of what was once a large family home. Twenty four hour care, a chef who cooks with fresh local produce, and gardens to walk in.</p>
+    <div class="btns">
+      <a class="btn solid" href="tel:01606883008">Call 01606 883008</a>
+      <a class="btn" href="#visit">Arrange a visit</a>
+    </div>
+  </div>
+  <figure class="hero-fig" style="margin:0">
+    <div class="arch hero-img crop-l"><img src="https://www.sandiwaymanor.org.uk/wp-content/uploads/sites/2/2019/07/sandiway-header-10.jpg" alt="Sandiway Manor, a red sandstone manor house with tall mullioned windows, framed by trees"></div>
+    <figcaption>Built of Cheshire sandstone, sensitively refurbished over the years.</figcaption>
+  </figure>
+</div></section>
+
+<div class="facts" id="care"><div class="wrap" style="padding:0"><ul>
+  <li><b>28</b>en suite rooms on two floors, with a lift and ramps</li>
+  <li><b>24 hour</b>care from attentive, experienced staff</li>
+  <li><b>Own chef</b>home cooked meals, every dietary need catered for</li>
+  <li><b>Short stays</b>respite breaks and day care as well as living here</li>
+</ul></div></div>
+
+<section id="life"><div class="wrap">
+  <div class="sec-head">
+    <h2>The frequent sound of laughter and music</h2>
+    <p>Days at the Manor are as busy or as quiet as each resident likes. Carers are always close by, and independence and dignity always come first.</p>
+  </div>
+  <div class="life">
+    <figure><div class="arch cover"><img src="https://www.sandiwaymanor.org.uk/wp-content/uploads/sites/2/2019/08/2B8A9402-700x700.jpg" alt="The sun lounge at Sandiway Manor, armchairs and paintings beside tall windows onto the garden"></div>
+      <figcaption><b>The sun lounge</b>Bright and quiet, looking over the gardens. Arts and crafts afternoons are held here, and the paintings often end up on the walls.</figcaption></figure>
+    <figure><div class="arch cover"><img src="https://www.sandiwaymanor.org.uk/wp-content/uploads/sites/2/2019/08/IMG_4402-e1569582783770.jpg" alt="A wooden bench under a pergola in the Sandiway Manor garden, with a red acer beside it"></div>
+      <figcaption><b>The gardens</b>Easy paths and walkways, a bench in the shade, and the chance to do some light weeding if you would like to.</figcaption></figure>
+    <figure><div class="arch cover"><img src="https://www.sandiwaymanor.org.uk/wp-content/uploads/sites/2/2019/08/IMG_5725-700x700.jpg" alt="A scone with jam and cream on a white plate, with a cup of tea"></div>
+      <figcaption><b>Afternoon tea</b>Homemade cakes or biscuits every afternoon, a Bistro corner for helping yourself, and light refreshments for visitors too.</figcaption></figure>
+  </div>
+</div></section>
+
+<section class="words"><div class="wrap">
+  <div class="sec-head"><h2>In the words of families</h2><p>Taken from the letters and cards on Sandiway Manor's current website.</p></div>
+  <div class="quotes">
+    <blockquote><p>&ldquo;It was a great comfort to us that Dad was able to come to Sandiway Manor after his stroke and to know he would receive loving care 24hrs a day. I would like to thank you, not only for the care and love Dad received, but for the support you gave to me and my family.&rdquo;</p><cite>Mr and Mrs L Slade<span>Northwich</span></cite></blockquote>
+    <blockquote><p>&ldquo;In these days of terrible stories about care homes, Sandiway Manor stands as a shining beacon. Such an establishment only comes from good leadership.&rdquo;</p><cite>Mrs J Bellows</cite></blockquote>
+    <blockquote><p>&ldquo;With its unfailing good humour, care and professionalism, Sandiway Manor remains a paragon in our minds of what a residential home should be.&rdquo;</p><cite>Mr J Lathom</cite></blockquote>
+  </div>
+</div></section>
+
+<section class="legacy" id="legacy"><div class="wrap">
+  <figure class="old" style="margin:0">
+    <img src="https://www.sandiwaymanor.org.uk/wp-content/uploads/sites/2/2019/09/the-manor-house.jpg" alt="An old black and white photograph of the Manor House at Sandiway">
+    <p>The Manor House, Sandiway, from the trust's own archive photograph.</p>
+  </figure>
+  <div>
+    <p class="eyebrow" style="color:#F1C9A6">A Legacy of Care, since 1947</p>
+    <h2>Sixteen governors founded this trust. Thirteen of them were women.</h2>
+    <p>In 1947 a Cheshire County Councillor called a meeting to improve care for older people, and a charity was formed to fund homes for those in need of assistance. By April that year, &pound;837 6s 6d had been raised.</p>
+    <p>All but three of the original sixteen Governors were women, and their determined efforts set the trust on its way. Nearly eighty years on, the same charity runs three homes in Cheshire and on the Wirral.</p>
+    <p class="sum">&ldquo;A Legacy of Care is one of the best ways you can continue to contribute to the future lives of others.&rdquo;</p>
+    <div class="btns"><a class="btn solid" href="#">Leave a Legacy of Care</a><a class="btn" href="#">Read the full story</a></div>
+  </div>
+</div></section>
+
+<section class="family" id="homes"><div class="wrap">
+  <div class="sec-head"><h2>Three homes, one family of care</h2><p>Every home is a house with its own garden, chef and manager, and every one belongs to the same charity.</p></div>
+  <div class="homes">
+    <article class="home s"><span class="here">You are here</span>
+      <svg width="46" height="58" viewBox="0 0 58 72" aria-hidden="true"><path d="M4 70V29a25 25 0 0 1 50 0v41" fill="none" stroke="#7E1F63" stroke-width="4"/><path d="M14 70V33a15 15 0 0 1 30 0v37M29 18v52M14 44h30" fill="none" stroke="#7E1F63" stroke-width="2.5"/></svg>
+      <h3>Sandiway Manor</h3><p class="town">Sandiway, Northwich, Cheshire</p>
+      <ul><li>28 en suite rooms</li><li>Sandstone manor in mature gardens</li><li>Sun lounge and Bistro corner</li></ul>
+      <a class="tel" href="tel:01606883008"><span>Call the Manor</span>01606 883008</a></article>
+    <article class="home u">
+      <svg width="46" height="58" viewBox="0 0 58 72" aria-hidden="true"><path d="M4 70V29a25 25 0 0 1 50 0v41" fill="none" stroke="#4A6820" stroke-width="4"/><rect x="15" y="26" width="28" height="36" fill="none" stroke="#4A6820" stroke-width="2.5"/><path d="M29 26v36M15 38h28M15 50h28" stroke="#4A6820" stroke-width="2"/></svg>
+      <h3>Upton Grange</h3><p class="town">Prestbury Road, Macclesfield</p>
+      <ul><li>23 en suite rooms</li><li>Country house with an Orangery</li><li>Summer house and sunny courtyard</li></ul>
+      <a class="tel" href="tel:01625829735"><span>Call Upton Grange</span>01625 829735</a></article>
+    <article class="home t">
+      <svg width="46" height="58" viewBox="0 0 58 72" aria-hidden="true"><path d="M4 70V29a25 25 0 0 1 50 0v41" fill="none" stroke="#365A86" stroke-width="4"/><path d="M12 52q8-10 16-4t18-6" fill="none" stroke="#365A86" stroke-width="2.5"/><circle cx="29" cy="36" r="6" fill="none" stroke="#365A86" stroke-width="2.5"/><path d="M12 60h34" stroke="#365A86" stroke-width="2.5"/></svg>
+      <h3>Trepassey</h3><p class="town">Heswall, Wirral</p>
+      <ul><li>33 en suite rooms, some with balconies</li><li>Jardine Suite for people living with dementia</li><li>Views of the Welsh hills over the Dee</li></ul>
+      <a class="tel" href="tel:01513422889"><span>Call Trepassey</span>0151 342 2889</a></article>
+  </div>
+  <div class="trustline">
+    <svg width="120" height="44" viewBox="0 0 120 44" aria-hidden="true"><g fill="none" stroke-width="3"><path d="M3 42V18a15 15 0 0 1 30 0v24" stroke="#7E1F63"/><path d="M45 42V18a15 15 0 0 1 30 0v24" stroke="#4A6820"/><path d="M87 42V18a15 15 0 0 1 30 0v24" stroke="#365A86"/></g></svg>
+    <p><b>The Cheshire Residential Homes Trust.</b> Not sure which home is right? Our managers will happily talk it through, and you can visit all three.</p>
+  </div>
+</div></section>
+
+<section class="visit" id="visit" style="background:#fff"><div class="wrap">
+  <div>
+    <h2>Visit as often as you like</h2>
+    <p>No website can show you what a home feels like. Come and chat with the staff, meet the residents, see the rooms and talk everything over with the Manager.</p>
+    <p>When it is free, our guest room lets you stay for a night or two and see how easy it is to settle in.</p>
+    <div class="btns" style="margin-top:24px"><a class="btn solid" href="tel:01606883008">Call 01606 883008</a><a class="btn" href="#">Ask for a brochure</a></div>
+  </div>
+  <div class="card">
+    <a class="big" href="tel:01606883008">01606 883008</a>
+    <dl style="margin-top:22px">
+      <dt>Address</dt><dd>Sandiway Manor, Norley Road, Sandiway, Northwich, Cheshire, CW8 2JW</dd>
+      <dt>Parking</dt><dd>On site</dd>
+      <dt>Also here</dt><dd>Respite breaks, day care, hairdressing salon, regular visits from the GP, chiropodist and physiotherapist</dd>
+    </dl>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div>
+    <h4>Sandiway Manor</h4>
+    <p>Norley Road, Sandiway, Northwich, Cheshire, CW8 2JW</p>
+    <p><a href="tel:01606883008">01606 883008</a></p>
+  </div>
+  <div>
+    <h4>The trust</h4>
+    <ul><li><a href="#homes">Our three homes</a></li><li><a href="#legacy">Our story since 1947</a></li><li><a href="#">Work with us</a></li><li><a href="#">Feedback</a></li></ul>
+  </div>
+  <div>
+    <h4>The Cheshire Residential Homes Trust</h4>
+    <p>Registered Charity Number: 1190162-1</p>
+    <p>Registered address: Sandiway Manor, Norley Road, Sandiway, Northwich, Cheshire, CW8 2JW</p>
+  </div>
+  <p class="note">Direction A, A Legacy of Care. A concept by Pete Owen Design, not the live Sandiway Manor website. Headlines are proposed copy; facts, testimonials and photographs come from the trust's and Sandiway Manor's current websites.</p>
+</div></footer>
+</body>
+</html>

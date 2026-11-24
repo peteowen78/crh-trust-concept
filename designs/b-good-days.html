@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Upton Grange: direction B, Good Days (concept)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,500,100;0,9..144,700,100;1,9..144,500,100;1,9..144,600,100&family=Nunito+Sans:ital,opsz,wght@0,6..12,400;0,6..12,700;0,6..12,800;1,6..12,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --cream:#FFF8EC;--butter:#F7D46A;--rose:#F6D3CC;--geranium:#C8392A;--leaf:#7FA33A;
+  --green:#2F5A22;--ink:#22301E;--mute:#4D5A47;
+  --sandiway:#8E2A6E;--upton:#3D6B1E;--trep:#2F6596;
+}
+*{box-sizing:border-box}
+html,body{overflow-x:clip}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 1.1875rem/1.6 "Nunito Sans",system-ui,sans-serif}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1260px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;margin:0;letter-spacing:-.015em;font-variation-settings:"SOFT" 100}
+.badge{display:inline-grid;place-items:center;border-radius:50%;flex:none}
+
+/* header */
+header.site{padding:18px 0}
+header.site .wrap{display:flex;align-items:center;gap:18px 28px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;margin-right:auto}
+.brand b{display:block;font:700 1.9rem/1 Fraunces,serif;color:var(--upton);font-variation-settings:"SOFT" 100}
+.brand small{display:block;font-size:.98rem;color:var(--mute);margin-top:4px}
+nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 22px}
+nav a{text-decoration:none;font-weight:800;font-size:1.05rem;padding:8px 0;display:inline-block}
+nav a:hover{text-decoration:underline;text-decoration-thickness:3px;text-underline-offset:6px;text-decoration-color:var(--butter)}
+.call{display:inline-flex;align-items:center;gap:10px;background:var(--upton);color:#fff;text-decoration:none;border-radius:999px;padding:10px 22px 10px 12px;font-weight:800;font-size:1.2rem;min-height:56px}
+.call .ic{width:36px;height:36px;border-radius:50%;background:var(--butter);display:grid;place-items:center}
+.call small{display:block;font-weight:400;font-size:.85rem;line-height:1}
+
+/* hero */
+.hero{padding:30px 0 70px}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:48px;align-items:center}
+.kicker{display:inline-block;background:var(--rose);font-weight:800;font-size:1rem;padding:6px 14px;border-radius:999px;margin:0 0 18px}
+.hero h1{font-size:clamp(2.5rem,5vw,4.4rem);line-height:1.02;margin-bottom:22px}
+.hero h1 em{font-style:italic;font-weight:600;color:var(--geranium)}
+.hero p.lede{font-size:1.3rem;max-width:36ch;margin:0 0 28px;color:var(--mute)}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:58px;padding:12px 26px;border-radius:999px;font-weight:800;font-size:1.1rem;text-decoration:none;border:3px solid var(--ink)}
+.btn.solid{background:var(--geranium);border-color:var(--geranium);color:#fff}
+.collage{position:relative;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);grid-template-rows:auto auto;gap:16px}
+.ph{border-radius:28px;overflow:hidden;position:relative;background:#e8e0cf}
+.ph img{width:100%;height:100%;object-fit:cover}
+.crop-l img,.crop-r img{position:absolute;top:0;height:100%;width:auto;max-width:none;object-fit:initial}
+.crop-l img{left:0}.crop-r img{right:0}
+.half-l img,.half-r img,.third-r img{position:absolute;top:50%;transform:translateY(-50%);height:auto;max-width:none;object-fit:initial}
+.half-l img{left:0;width:206%}.half-r img{right:0;width:206%}.third-r img{right:0;width:312%}
+.c1{grid-row:1/3;aspect-ratio:3/4}
+.c2{aspect-ratio:1/1}
+.c3{aspect-ratio:1/1;border-radius:50%}
+.tag{position:absolute;background:#fff;border-radius:999px;padding:8px 16px;font-weight:800;font-size:1rem;box-shadow:0 10px 24px -14px rgba(0,0,0,.45);white-space:nowrap}
+.tag.t1{left:-14px;top:30px;transform:rotate(-4deg);background:var(--butter)}
+.tag.t2{right:-8px;bottom:46%;transform:rotate(3deg)}
+.tag.t3{right:70px;bottom:-14px;transform:rotate(-2deg);background:var(--rose)}
+
+/* strip */
+.strip{background:var(--green);color:#fff}
+.strip ul{list-style:none;margin:0;padding:22px 0;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 28px;font-weight:800;font-size:1.1rem}
+.strip li{display:flex;align-items:center;gap:10px}
+.strip li::before{content:"";width:12px;height:12px;border-radius:50%;background:var(--butter);flex:none}
+
+section{padding:84px 0}
+.head{max-width:760px;margin-bottom:40px}
+.head h2{font-size:clamp(2.1rem,3.8vw,3.2rem);line-height:1.06;margin-bottom:14px}
+.head p{margin:0;color:var(--mute);font-size:1.2rem}
+
+/* day */
+.day{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;counter-reset:d}
+.moment{background:#fff;border-radius:28px;padding:28px 24px 30px;position:relative;border:2px solid #EFE4CF}
+.moment h3{font-size:1.55rem;margin:16px 0 8px}
+.moment p{margin:0}
+.moment .when{font-weight:800;font-size:1rem;letter-spacing:.06em;text-transform:uppercase;color:var(--geranium)}
+.moment:nth-child(2){background:#FDF1D0}
+.moment:nth-child(3){background:#E9F0DA}
+.moment:nth-child(4){background:#F9E2DD}
+
+/* garden feature */
+.feature{background:#E9F0DA}
+.feature .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:48px;align-items:center}
+.feature .pair{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.feature .pair .ph{aspect-ratio:3/4}
+.feature .pair .ph:nth-child(2){margin-top:48px}
+.feature h2{font-size:clamp(2.1rem,3.8vw,3.2rem);line-height:1.06;margin-bottom:16px}
+.feature ul{padding-left:0;list-style:none;margin:20px 0 0}
+.feature li{padding:10px 0 10px 40px;position:relative;border-top:2px dashed #C9D7AE}
+.feature li::before{content:"";position:absolute;left:4px;top:16px;width:20px;height:20px;border-radius:50%;background:var(--leaf);box-shadow:inset 0 0 0 5px #E9F0DA}
+
+/* care */
+.care{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.care a{display:block;text-decoration:none;border-radius:28px;padding:30px 28px;border:3px solid var(--ink);background:#fff}
+.care a:hover{background:#FDF1D0}
+.care h3{font-size:1.7rem;margin-bottom:8px}
+.care p{margin:0 0 16px}
+.care .go{font-weight:800;text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:3px;text-decoration-color:var(--geranium)}
+
+/* words */
+.words{background:var(--butter)}
+.quotes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px;align-items:start}
+blockquote{margin:0;background:#fff;border-radius:28px 28px 28px 6px;padding:28px 26px}
+blockquote p{font:italic 500 1.25rem/1.45 Fraunces,serif;margin:0 0 16px}
+blockquote cite{font-style:normal;font-weight:800}
+.quotes blockquote:nth-child(2){margin-top:34px}
+
+/* family */
+.family{background:#fff}
+.homes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.home{border-radius:28px;overflow:hidden;color:#fff;display:flex;flex-direction:column}
+.home .ph{border-radius:0;aspect-ratio:16/10}
+.home .body{padding:24px 26px 28px;display:flex;flex-direction:column;flex:1}
+.home .top{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+.home h3{font-size:1.8rem;line-height:1}
+.home .town{font-size:1rem;opacity:.95}
+.home p{margin:0 0 18px}
+.home .tel{margin-top:auto;background:#fff;border-radius:999px;padding:12px 20px;font-weight:800;font-size:1.2rem;text-decoration:none;text-align:center}
+.home.s{background:var(--sandiway)}.home.s .tel{color:var(--sandiway)}
+.home.u{background:var(--upton)}.home.u .tel{color:var(--upton)}
+.home.t{background:var(--trep)}.home.t .tel{color:var(--trep)}
+.here{font-size:.95rem;font-weight:800;background:var(--butter);color:var(--ink);padding:3px 10px;border-radius:99px;margin-left:auto}
+.since{margin-top:30px;display:flex;gap:22px;align-items:center;flex-wrap:wrap;background:var(--cream);border-radius:28px;padding:24px 28px}
+.since p{margin:0;flex:1 1 340px}
+.since b{font-family:Fraunces,serif;font-size:1.3rem}
+
+/* visit */
+.visit{background:var(--geranium);color:#fff}
+.visit .wrap{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:48px;align-items:center}
+.visit h2{font-size:clamp(2.2rem,4vw,3.4rem);line-height:1.04;margin-bottom:16px}
+.visit .btn{border-color:#fff;color:#fff}
+.visit .btn.solid{background:#fff;color:var(--geranium);border-color:#fff}
+.addr{background:#fff;color:var(--ink);border-radius:28px;padding:30px}
+.addr .big{display:block;font:700 2.3rem/1.1 Fraunces,serif;color:var(--upton);text-decoration:none;margin-bottom:12px}
+.addr p{margin:0 0 8px}
+
+footer{background:var(--ink);color:#E7E9DD;padding:50px 0 96px;font-size:1rem}
+footer .wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:30px}
+footer h4{font:700 1.3rem Fraunces,serif;margin:0 0 10px;color:#fff}
+footer p{margin:0 0 8px}
+footer ul{list-style:none;margin:0;padding:0;line-height:2}
+.note{grid-column:1/-1;border-top:1px solid #435040;padding-top:18px;color:#BCC4B2;font-size:.9rem}
+.callbar{display:none}
+
+@media (max-width:1020px){
+  .hero .wrap,.feature .wrap,.visit .wrap{grid-template-columns:1fr}
+  .day{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .care,.quotes,.homes{grid-template-columns:1fr}
+  .quotes blockquote:nth-child(2){margin-top:0}
+  footer .wrap{grid-template-columns:1fr}
+}
+@media (max-width:600px){
+  .wrap{padding:0 18px}
+  body{font-size:1.125rem}
+  header.site .call{display:none}
+  .brand b{font-size:1.65rem}
+  nav ul{gap:0 18px}
+  .hero{padding:10px 0 56px}
+  .day{grid-template-columns:1fr}
+  .tag{font-size:1rem;padding:6px 12px}
+  .tag.t1{left:6px;top:12px}.tag.t2{right:6px}.tag.t3{right:12px;bottom:8px}
+  section{padding:58px 0}
+  .feature .pair .ph:nth-child(2){margin-top:28px}
+  .btn{width:100%}
+  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:5;background:var(--upton);color:#fff;text-decoration:none;justify-content:center;align-items:center;gap:10px;padding:14px;font-weight:800;font-size:1.2rem;box-shadow:0 -8px 20px -10px rgba(0,0,0,.4)}
+}
+</style>
+</head>
+<body>
+<div style="background:#17201B;color:#fff;font:500 14px/1.4 system-ui,sans-serif;padding:9px 20px;position:relative;display:flex;flex-wrap:wrap;gap:6px 18px;align-items:center;z-index:2147483000"><span style="display:inline-flex;align-items:center;gap:8px"><svg style="height:12px;width:auto;color:#fff" viewBox="0 0 487.5 208.5" role="img" aria-label="Pete Owen Design logo"><path fill="currentColor" d="M487.5,10.6h-41.2v15.5c-15.3-10.6-33.9-16.8-53.8-16.8-30.1,0-57,14.1-74.4,36-17.4-21.9-44.3-36-74.4-36s-57,14.1-74.4,36c-17.4-21.9-44.3-36-74.4-36C44.8,9.4,3.8,48,0,96.9h-.3v100.3h41.2v-14.5c15.3,10.6,33.9,16.8,53.8,16.8,30.1,0,57-14.1,74.4-36,17.4,21.9,44.3,36,74.4,36s57-14.1,74.4-36c17.4,21.9,44.3,36,74.4,36,52.4,0,95.1-42.6,95.1-95.1s0-1.3,0-1.9h0V10.6h0ZM94.6,158.2c-29.7,0-53.8-24.2-53.8-53.8s24.2-53.8,53.8-53.8,53.8,24.2,53.8,53.8-24.2,53.8-53.8,53.8ZM243.5,158.2c-29.7,0-53.8-24.2-53.8-53.8s24.2-53.8,53.8-53.8,53.8,24.2,53.8,53.8-24.2,53.8-53.8,53.8ZM392.4,158.2c-29.7,0-53.8-24.2-53.8-53.8s24.2-53.8,53.8-53.8,53.8,24.2,53.8,53.8-24.2,53.8-53.8,53.8Z"/></svg> Design idea by Pete Owen Design. Not the live CRH Trust website.</span><a href="../index.html" style="color:#fff;font-weight:700">Back to the start</a></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <!-- Upton Grange: the summer house -->
+    <symbol id="e-upton" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 22 24 10l14 12"/><path d="M13 20v18h22V20"/><path d="M21 38v-9h6v9"/><path d="M16 25h3v4h-3zM29 25h3v4h-3z"/><path d="M24 10V6"/><path d="M8 38h32"/></g></symbol>
+    <!-- Sandiway Manor: the tree on the lawn -->
+    <symbol id="e-sandiway" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M24 40V26"/><path d="M24 30l-5-4M24 28l5-5"/><path d="M14 22a10 9 0 0 1 4-12 9 9 0 0 1 14 1 8 8 0 0 1 3 12 7 7 0 0 1-8 5H19a6 6 0 0 1-5-6z"/><path d="M8 40h32"/></g></symbol>
+    <!-- Trepassey: sunset over the Welsh hills -->
+    <symbol id="e-trep" viewBox="0 0 48 48"><g fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 27a9 9 0 0 1 18 0"/><path d="M24 12v3M13 16l2 2M35 16l-2 2"/><path d="M6 31q8-6 14-2t22-1"/><path d="M8 37q4 2 8 0t8 0 8 0 8 0"/></g></symbol>
+  </defs>
+</svg>
+
+<header class="site"><div class="wrap">
+  <a class="brand" href="#" aria-label="Upton Grange home">
+    <span class="badge" style="width:64px;height:64px;background:var(--upton);color:#fff"><svg width="40" height="40"><use href="#e-upton"/></svg></span>
+    <span><b>Upton Grange</b><small>Macclesfield. A home of the CRH Trust</small></span>
+  </a>
+  <nav aria-label="Main"><ul>
+    <li><a href="#day">Life here</a></li>
+    <li><a href="#care">Care and stays</a></li>
+    <li><a href="#homes">Our three homes</a></li>
+    <li><a href="#visit">Visit</a></li>
+  </ul></nav>
+  <a class="call" href="tel:01625829735"><span class="ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="#22301E"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span><span><small>Call us</small>01625 829735</span></a>
+</div></header>
+
+<main>
+<section class="hero" style="padding-top:30px"><div class="wrap">
+  <div>
+    <p class="kicker">Residential care, short stays and day care</p>
+    <h1>Art in the Orangery. Tea in the garden. <em>Kind people close by.</em></h1>
+    <p class="lede">Upton Grange is a country house in its own peaceful gardens, on the road from Macclesfield to Prestbury. Every day there is something to look forward to, and someone to share it with.</p>
+    <div class="btns"><a class="btn solid" href="#visit">Come and look round</a><a class="btn" href="tel:01625829735">Call 01625 829735</a></div>
+  </div>
+  <div class="collage">
+    <div class="ph c1 crop-l"><img src="https://www.uptongrange.org.uk/wp-content/uploads/sites/5/2019/10/upton-grange-banner.jpg" alt="Residents of Upton Grange sitting together on garden chairs on the patio, with red geraniums"></div>
+    <div class="ph c2 half-r"><img src="https://www.uptongrange.org.uk/wp-content/uploads/sites/5/2019/10/upton-1.jpg" alt="The Orangery at Upton Grange seen from the garden, with flowers in pots"></div>
+    <div class="ph c3 half-r"><img src="https://www.uptongrange.org.uk/wp-content/uploads/sites/5/2019/10/upton-2.jpg" alt="A stone sundial on the lawn with the green summer house behind"></div>
+    <span class="tag t1">23 en suite rooms</span>
+    <span class="tag t2">The Orangery</span>
+    <span class="tag t3">The summer house</span>
+  </div>
+</div></section>
+
+<div class="strip"><div class="wrap"><ul>
+  <li>24 hour care</li><li>Our own chef</li><li>Lift and ramps on both floors</li><li>Visit as often as you like</li><li>A charity since 1947</li>
+</ul></div></div>
+
+<section id="day"><div class="wrap">
+  <div class="head"><h2>A good day at Upton Grange</h2><p>Join in with everything, or nothing at all. These are the things residents enjoy most, in their own time.</p></div>
+  <div class="day">
+    <div class="moment"><span class="when">Morning</span><h3>Breakfast your way</h3><p>In your own room if you prefer, then morning coffee with friends in the lounge when you are ready.</p></div>
+    <div class="moment"><span class="when">Late morning</span><h3>Into the garden</h3><p>Walks round the gardens, a seat in the sunny courtyard, or a little light weeding.</p></div>
+    <div class="moment"><span class="when">Afternoon</span><h3>Art, music and visitors</h3><p>Art afternoons in the Orangery, choirs and entertainers, pet therapists, and performances by local schoolchildren.</p></div>
+    <div class="moment"><span class="when">Evening</span><h3>Tea, then a film</h3><p>Afternoon tea with homemade cakes, a light supper, then a film together in the lounge or TV in your room.</p></div>
+  </div>
+</div></section>
+
+<section class="feature"><div class="wrap">
+  <div class="pair">
+    <div class="ph half-l"><img src="https://www.uptongrange.org.uk/wp-content/uploads/sites/5/2019/10/upton-3.jpg" alt="The garden terrace at Upton Grange on a sunny day, with mature trees and a lawn"></div>
+    <div class="ph"><img src="https://www.uptongrange.org.uk/wp-content/uploads/sites/5/2019/10/Trep-93-e1571905332262.jpg" alt="A meringue pudding with cream and berries on a white plate"></div>
+  </div>
+  <div>
+    <h2>A house, a garden and a kitchen, not a ward</h2>
+    <p>Once a private country house, Upton Grange is still a home first. Rooms have their own bathrooms and room for your own armchair and bits and bobs. Our chef cooks varied menus from good local food, tempting even when appetites are small.</p>
+    <ul>
+      <li>Two lounges, one of them quiet, with a small library</li>
+      <li>The Orangery, bright and perfect for visitors</li>
+      <li>A central courtyard that is a sun trap all year round</li>
+      <li>Hairdressing salon, and regular visits from the GP</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="care"><div class="wrap">
+  <div class="head"><h2>Living here, staying a while, or coming for the day</h2><p>Every guest has the same care, meals and company as our residents. Help with funding is available in many cases for short stays.</p></div>
+  <div class="care">
+    <a href="#"><h3>Make it home</h3><p>Residential care with 24 hour support, your own en suite room, with board, laundry and care included in one monthly fee.</p><span class="go">About living here</span></a>
+    <a href="#"><h3>Stay for a while</h3><p>Respite breaks after a hospital stay or a fall, or so the person who cares for you can rest.</p><span class="go">About short stays</span></a>
+    <a href="#"><h3>Come for the day</h3><p>Day care with meals, cakes and endless cups of tea, help with bathing, a hair appointment and new friends.</p><span class="go">About day care</span></a>
+  </div>
+</div></section>
+
+<section class="words"><div class="wrap">
+  <div class="head"><h2>What families tell us</h2></div>
+  <div class="quotes">
+    <blockquote><p>&ldquo;Throughout the time that our uncle was a resident at Upton Grange, the care and attention given to him could not have been surpassed. The Manager and staff were both caring and attentive to his every need and request.&rdquo;</p><cite>Mr L, Macclesfield</cite></blockquote>
+    <blockquote><p>&ldquo;Our mother was very happy at Upton Grange and had nothing but praise for the staff. The Home shows a friendly atmosphere there at all times. May its wonderful work continue for many years to come for the benefit of all the elderly residents who could not be in a better place.&rdquo;</p><cite>Mr R, Macclesfield</cite></blockquote>
+    <blockquote><p>&ldquo;For respite care, Upton Grange is a very friendly and homely place but most important of all, I can leave my husband there, knowing I will have no worries about the care and kindness he will receive.&rdquo;</p><cite>Mrs B, Prestbury</cite></blockquote>
+  </div>
+</div></section>
+
+<section class="family" id="homes"><div class="wrap">
+  <div class="head"><h2>One of three homes, all with good days</h2><p>The Cheshire Residential Homes Trust runs three homes. Each has its own character; all share the same care.</p></div>
+  <div class="homes">
+    <article class="home u" style="position:relative">
+      <span class="here" style="position:absolute;top:14px;right:14px;z-index:2">You are here</span>
+      <div class="ph third-r"><img src="https://www.uptongrange.org.uk/wp-content/uploads/sites/5/2019/10/upton-grange-banner.jpg" alt="Upton Grange, a white country house under a blue sky"></div>
+      <div class="body"><div class="top"><span class="badge" style="width:52px;height:52px;background:#fff;color:var(--upton)"><svg width="34" height="34"><use href="#e-upton"/></svg></span><div><h3>Upton Grange</h3><span class="town">Macclesfield</span></div></div>
+      <p>23 rooms. The Orangery, the summer house and a sunny courtyard.</p>
+      <a class="tel" href="tel:01625829735">01625 829735</a></div>
+    </article>
+    <article class="home s">
+      <div class="ph"><img src="https://www.crhtrust.org.uk/wp-content/uploads/2019/09/Sandiway-Manor-home.jpg" alt="The lawns and round flower bed at Sandiway Manor with tall trees and a summer house"></div>
+      <div class="body"><div class="top"><span class="badge" style="width:52px;height:52px;background:#fff;color:var(--sandiway)"><svg width="34" height="34"><use href="#e-sandiway"/></svg></span><div><h3>Sandiway Manor</h3><span class="town">Near Northwich</span></div></div>
+      <p>28 rooms. A sandstone manor in mature gardens, with a sun lounge.</p>
+      <a class="tel" href="tel:01606883008">01606 883008</a></div>
+    </article>
+    <article class="home t">
+      <div class="ph"><img src="https://www.trepassey.org.uk/wp-content/uploads/sites/7/2019/10/Trep-63-e1571904414693.jpg" alt="The view from Trepassey over trees to the Dee estuary and the Welsh hills"></div>
+      <div class="body"><div class="top"><span class="badge" style="width:52px;height:52px;background:#fff;color:var(--trep)"><svg width="34" height="34"><use href="#e-trep"/></svg></span><div><h3>Trepassey</h3><span class="town">Heswall, Wirral</span></div></div>
+      <p>33 rooms, views to the Welsh hills, and the Jardine Suite for dementia care.</p>
+      <a class="tel" href="tel:01513422889">0151 342 2889</a></div>
+    </article>
+  </div>
+  <div class="since">
+    <span style="display:flex;gap:8px"><span class="badge" style="width:44px;height:44px;background:var(--sandiway);color:#fff"><svg width="28" height="28"><use href="#e-sandiway"/></svg></span><span class="badge" style="width:44px;height:44px;background:var(--upton);color:#fff"><svg width="28" height="28"><use href="#e-upton"/></svg></span><span class="badge" style="width:44px;height:44px;background:var(--trep);color:#fff"><svg width="28" height="28"><use href="#e-trep"/></svg></span></span>
+    <p><b>Good days since 1947.</b> The trust was founded by sixteen governors, thirteen of them women, with &pound;837 6s 6d raised by April 1947. A Legacy of Care keeps that work going.</p>
+    <a class="btn" href="#">Leave a Legacy of Care</a>
+  </div>
+</div></section>
+
+<section class="visit" id="visit"><div class="wrap">
+  <div>
+    <h2>Come for a cup of tea and a look round</h2>
+    <p>Visit as often as you like. Chat with the staff, meet the residents, see the rooms and talk it all over with the Manager. When our guest room is free, you can stay a night or two first.</p>
+    <div class="btns" style="margin-top:22px"><a class="btn solid" href="tel:01625829735">Call 01625 829735</a><a class="btn" href="#">Ask for a brochure</a></div>
+  </div>
+  <div class="addr">
+    <a class="big" href="tel:01625829735">01625 829735</a>
+    <p><b>Upton Grange</b><br>214 Prestbury Road, Macclesfield, SK10 4AA</p>
+    <p>Parking on site.</p>
+  </div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div><h4>Upton Grange</h4><p>214 Prestbury Road, Macclesfield, SK10 4AA</p><p><a href="tel:01625829735">01625 829735</a></p></div>
+  <div><h4>Find out more</h4><ul><li><a href="#care">Care and stays</a></li><li><a href="#homes">Our three homes</a></li><li><a href="#">Work with us</a></li><li><a href="#">Feedback</a></li></ul></div>
+  <div><h4>The Cheshire Residential Homes Trust</h4><p>Registered Charity Number: 1190162-1</p><p>Registered address: Sandiway Manor, Norley Road, Sandiway, Northwich, Cheshire, CW8 2JW</p></div>
+  <p class="note">Direction B, Good Days. A concept by Pete Owen Design, not the live Upton Grange website. Headlines are proposed copy; facts, testimonials and photographs come from the trust's and the homes' current websites.</p>
+</div></footer>
+<a class="callbar" href="tel:01625829735">Call Upton Grange 01625 829735</a>
+</body>
+</html>
